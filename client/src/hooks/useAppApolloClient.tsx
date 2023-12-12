@@ -32,5 +32,6 @@ export const useAppApolloClient = () => {
   return new ApolloClient({
     link: authLink(cookies.accessToken).concat(httpLink),
     cache,
+    connectToDevTools: true,
   });
 };
