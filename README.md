@@ -45,11 +45,11 @@
 
 **Note:** Make sure you run the following commands in the root directory of the project.
 
-<!-- 2 sections about client and server -->
-
 #### Client
 
-Commands to run:
+**Host:** http://localhost:3000
+
+**Commands to run:**
 
 ```bash
 cd client
@@ -59,21 +59,25 @@ yarn start
 
 #### Server
 
-Commands to run:
+**Host:** http://localhost:8080
+
+**GraphQL API:** http://localhost:8080/graphql
+
+**Commands to run:**
 
 ```bash
 cd server
 yarn install
-docker-compose up -d
+docker compose up -d
 ```
 
-Commands to stop:
+**Commands to stop:**
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
-Commands to logs:
+**Commands to logs:**
 
 ```bash
 # log server logs
