@@ -41,6 +41,12 @@
 - [pgAdmin4](https://www.pgadmin.org/)
 - [Typescript](https://www.typescriptlang.org/)
 
+### Implemented features
+
+- [x] Authenticate with JWT (login, register, logout)
+- [x] CRUD to do lists
+- [x] CRUD tasks
+
 ### How to run
 
 **Note:** Make sure you run the following commands in the root directory of the project.
@@ -54,7 +60,7 @@
 ```bash
 cd client
 yarn install
-yarn start
+yarn dev
 ```
 
 #### Server
@@ -62,6 +68,8 @@ yarn start
 **Host:** http://localhost:8080
 
 **GraphQL API:** http://localhost:8080/graphql
+
+**pgAdmin4:** http://localhost:5050
 
 **Commands to run:**
 
@@ -88,4 +96,7 @@ docker logs db -f
 
 # log pgadmin4 logs
 docker logs pgadmin4 -f
+
+# log all logs
+docker compose logs -f
 ```
